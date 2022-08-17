@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace NamespaceBuilder
+namespace NamespaceUpdater
 {
 	internal abstract class LogicFileNamespaceUpdaterService : IFileNamespaceUpdater
 	{

@@ -5,14 +5,14 @@
 // ------------------------------------------------------------------------------
 namespace NamespaceAdjuster
 {
-	internal sealed partial class Vsix
-	{
-		public const string Id = "NamespaceAdjuster.897e9043-7d4c-48ac-a147-97f2dcb2be9f";
-		public const string Name = "Namespace Adjuster";
-		public const string Description = @"Select one or multiple .cs files and adjust them with the specified Namespace";
-		public const string Language = "en-US";
-		public const string Version = "1.0";
-		public const string Author = "Eric Batlle Clavero";
-		public const string Tags = "";
-	}
+    internal sealed partial class Vsix
+    {
+        public const string Id = "NamespaceAdjuster.897e9043-7d4c-48ac-a147-97f2dcb2be9f";
+        public const string Name = "Namespace Adjuster";
+        public const string Description = @"Select one or multiple .cs files and adjust them with the specified Namespace";
+        public const string Language = "en-US";
+        public const string Version = "1.1";
+        public const string Author = "Eric Batlle Clavero";
+        public const string Tags = "";
+    }
 }

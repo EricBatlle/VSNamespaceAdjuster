@@ -1,4 +1,4 @@
-﻿using NamespaceBuilder;
+﻿using NamespaceUpdater;
 using System.IO;
 
 class NamespaceAdjusterController

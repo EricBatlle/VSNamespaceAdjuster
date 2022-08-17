@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace NamespaceBuilder
+namespace NamespaceUpdater
 {
 	internal class CsNamespaceUpdaterService : LogicFileNamespaceUpdaterService
 	{
