@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <Extern href="stdidcmd.h"/>
-  <Extern href="vsshlids.h"/>
-  <Include href="KnownImageIds.vsct"/>
-  <Include href="VSGlobals.vsct"/>
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
 
-  <Commands package="NamespaceAdjuster">
+	<Commands package="NamespaceAdjuster">
 		<Groups>
 			<Group guid="NamespaceAdjuster" id="MyMenuGroup" priority="0x5AA">
 				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
 			</Group>
 			<!--<Group guid="AddNamespaceToMultipleFiles" id="MyMenuGroup" priority="0x5AA">
-          <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE"/>
-      </Group>-->
+						<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE"/>
+			</Group>-->
 		</Groups>
 
-    <!--This section defines the elements the user can interact with, like a menu command or a button
+		<!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
-    <Buttons>
-				<Button guid="NamespaceAdjuster" id="AdjustNamespaceCommand" priority="0x0100" type="Button">
-        <Parent guid="NamespaceAdjuster" id="MyMenuGroup" />
-							<Icon guid="ImageCatalogGuid" id="Namespace" />
-        <CommandFlag>IconIsMoniker</CommandFlag>
-        <Strings>
-          <ButtonText>Adjust namespace</ButtonText>
-          <LocCanonicalName>.NamespaceAdjuster.AdjustNamespaceCommand</LocCanonicalName>
-        </Strings>
-      </Button>
-    </Buttons>
-  </Commands>
+		<Buttons>
+			<Button guid="NamespaceAdjuster" id="AdjustNamespaceCommand" priority="0x0100" type="Button">
+				<Parent guid="NamespaceAdjuster" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="Namespace" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Adjust namespace</ButtonText>
+					<LocCanonicalName>.NamespaceAdjuster.AdjustNamespaceCommand</LocCanonicalName>
+				</Strings>
+			</Button>
+		</Buttons>
+	</Commands>
 
-  <Symbols>
-    <GuidSymbol name="NamespaceAdjuster" value="{f5019467-54ba-4373-a6de-d3b5857b0545}">
-      <IDSymbol name="MyMenuGroup" value="0x0001" />
-      <IDSymbol name="AdjustNamespaceCommand" value="0x0100" />
-    </GuidSymbol>
-  </Symbols>
+	<Symbols>
+		<GuidSymbol name="NamespaceAdjuster" value="{f5019467-54ba-4373-a6de-d3b5857b0545}">
+			<IDSymbol name="MyMenuGroup" value="0x0001" />
+			<IDSymbol name="AdjustNamespaceCommand" value="0x0100" />
+		</GuidSymbol>
+	</Symbols>
 </CommandTable>
