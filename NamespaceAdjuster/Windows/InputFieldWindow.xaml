@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NamespaceAdjuster.Windows"
         mc:Ignorable="d"
-        Title="Adjust Namespace" Height="70" Width="240" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+        Title="Adjust Namespace" Height="80" Width="235" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
 	<Grid>
-		<TextBox x:Name="NamespaceInputField" HorizontalAlignment="Left" Height="20" Margin="10,13,0,0" TextWrapping="Wrap" Text="NewNamespace" VerticalAlignment="Top" Width="134"/>
-		<Button x:Name="OkButton" Content="Ok" Margin="149,13,0,0" VerticalAlignment="Top" Click="OkButton_Click" HorizontalAlignment="Left" Width="75"/>
+		<TextBox x:Name="NamespaceInputField" HorizontalAlignment="Left" Height="20" Margin="10,13,0,0" TextWrapping="Wrap" Text="NewNamespace" VerticalAlignment="Top" Width="120"/>
+		<Button x:Name="OkButton" Content="Ok" Margin="135,13,0,0" VerticalAlignment="Top" Click="OkButton_Click" HorizontalAlignment="Left" Width="75"/>
 
 	</Grid>
 </Window>
