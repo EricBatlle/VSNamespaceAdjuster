@@ -11,7 +11,7 @@ namespace NamespaceAdjuster
         public const string Name = "Namespace Adjuster";
         public const string Description = @"Select one or multiple .cs files and adjust them with the specified Namespace";
         public const string Language = "en-US";
-        public const string Version = "1.1";
+        public const string Version = "1.2";
         public const string Author = "Eric Batlle Clavero";
         public const string Tags = "";
     }
