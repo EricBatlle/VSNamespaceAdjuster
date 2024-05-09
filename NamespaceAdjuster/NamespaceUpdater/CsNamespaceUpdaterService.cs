@@ -4,6 +4,8 @@ namespace NamespaceUpdater
 {
 	internal class CsNamespaceUpdaterService : LogicFileNamespaceUpdaterService
 	{
+		protected override string SupportedFileExtension => ".cs";
+
 		protected override string NamespaceStartLimiter => "{" + NewLine;
 
 		protected override string NamespaceEndLimiter => "}";

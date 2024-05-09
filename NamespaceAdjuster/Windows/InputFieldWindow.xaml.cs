@@ -7,9 +7,6 @@ using System.Windows;
 
 namespace NamespaceAdjuster.Windows
 {
-	/// <summary>
-	/// Lógica de interacción para Window1.xaml
-	/// </summary>
 	public partial class InputFieldWindow : Window
 	{
 		ISolutionSelectionService solutionSelectionService;
@@ -32,7 +29,14 @@ namespace NamespaceAdjuster.Windows
 			NamespaceAdjusterController namespaceAdjuster = new NamespaceAdjusterController();
 			foreach (string filePath in solutionSelectionService.GetSelectedItemsPaths())
 			{
-				namespaceAdjuster.FixNamespace(desiredNamespace, filePath);
+				try
+				{
+					namespaceAdjuster.FixNamespace(desiredNamespace, filePath);
+				}
+				catch(Exception e)
+				{
+					MessageBox.Show(e.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+				}
 			}
 		}
 
@@ -52,7 +56,7 @@ namespace NamespaceAdjuster.Windows
 			}
 			catch (Exception exc)
 			{
-				System.Windows.MessageBox.Show("Opening failed: " + exc.Message, "Error", MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+				MessageBox.Show("Opening failed: " + exc.Message, "Error", MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
 			}
 			finally
 			{

@@ -3,10 +3,11 @@ using System.IO;
 
 class NamespaceAdjusterController
 {
-	private IFileNamespaceUpdater namespaceUpdater;
+	FileNamespaceUpdaterProvider namespaceUpdaterProvider;
+
 	public NamespaceAdjusterController()
 	{
-		namespaceUpdater = new CsNamespaceUpdaterService();
+		namespaceUpdaterProvider = new FileNamespaceUpdaterProvider();
 	}
 
 	public void FixNamespace(string desiredNamespace, string filePath)
@@ -16,10 +17,10 @@ class NamespaceAdjusterController
 			return;
 		}
 
+		IFileNamespaceUpdater namespaceUpdater = namespaceUpdaterProvider.GetUpdater(filePath);
+
 		var encoding = Extensions.PathExtensions.GetEncoding(filePath);
-
 		var fileContent = File.ReadAllText(filePath, encoding);
-
 		var updated = namespaceUpdater.UpdateFileNamespace(ref fileContent, desiredNamespace);
 
 		if (updated)

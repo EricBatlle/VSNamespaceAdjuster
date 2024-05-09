@@ -5,22 +5,22 @@
 // ------------------------------------------------------------------------------
 namespace NamespaceAdjuster
 {
-    using System;
-    
-    /// <summary>
-    /// Helper class that exposes all GUIDs used across VS Package.
-    /// </summary>
-    internal sealed partial class PackageGuids
-    {
-        public const string NamespaceAdjusterString = "f5019467-54ba-4373-a6de-d3b5857b0545";
-        public static Guid NamespaceAdjuster = new Guid(NamespaceAdjusterString);
-    }
-    /// <summary>
-    /// Helper class that encapsulates all CommandIDs uses across VS Package.
-    /// </summary>
-    internal sealed partial class PackageIds
-    {
-        public const int MyMenuGroup = 0x0001;
-        public const int AdjustNamespaceCommand = 0x0100;
-    }
+	using System;
+
+	/// <summary>
+	/// Helper class that exposes all GUIDs used across VS Package.
+	/// </summary>
+	internal sealed partial class PackageGuids
+	{
+		public const string NamespaceAdjusterString = "f5019467-54ba-4373-a6de-d3b5857b0545";
+		public static Guid NamespaceAdjuster = new Guid(NamespaceAdjusterString);
+	}
+	/// <summary>
+	/// Helper class that encapsulates all CommandIDs uses across VS Package.
+	/// </summary>
+	internal sealed partial class PackageIds
+	{
+		public const int MyMenuGroup = 0x0001;
+		public const int AdjustNamespaceCommand = 0x0100;
+	}
 }

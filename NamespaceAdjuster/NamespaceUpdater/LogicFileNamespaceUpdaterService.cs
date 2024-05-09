@@ -6,6 +6,7 @@ namespace NamespaceUpdater
 {
 	internal abstract class LogicFileNamespaceUpdaterService : IFileNamespaceUpdater
 	{
+		protected abstract string SupportedFileExtension { get; }
 		protected abstract string NamespaceStartLimiter { get; }
 		protected abstract string NamespaceEndLimiter { get; }
 		protected abstract Match FindNamespaceMatch(string fileContent);
@@ -20,6 +21,11 @@ namespace NamespaceUpdater
 
 			if (isCrlf) NewLine = "\r\n";
 			else NewLine = "\n";
+		}
+
+		public bool SupportsFileExtension(string fileExtension)
+		{
+			return fileExtension.Equals(SupportedFileExtension);
 		}
 
 		public virtual bool UpdateFileNamespace(ref string fileContent, string desiredNamespace)

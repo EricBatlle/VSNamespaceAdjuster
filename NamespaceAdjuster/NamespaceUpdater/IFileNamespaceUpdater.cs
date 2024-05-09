@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace NamespaceUpdater
+﻿namespace NamespaceUpdater
 {
 	internal interface IFileNamespaceUpdater
 	{
