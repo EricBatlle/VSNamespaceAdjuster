@@ -52,6 +52,7 @@
     <Compile Include="NamespaceUpdater\IFileNamespaceUpdater.cs" />
     <Compile Include="NamespaceUpdater\LogicFileNamespaceUpdaterService.cs" />
     <Compile Include="NamespaceUpdater\FileNamespaceUpdaterProvider.cs" />
+    <Compile Include="NamespaceUpdater\VbNamespaceUpdaterService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NamespaceAdjusterPackage.cs" />
     <Compile Include="SolutionSelection\ISolutionSelectionService.cs" />

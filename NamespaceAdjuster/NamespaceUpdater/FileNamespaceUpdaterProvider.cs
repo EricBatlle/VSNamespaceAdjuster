@@ -11,6 +11,7 @@ namespace NamespaceUpdater
 		public FileNamespaceUpdaterProvider()
 		{
 			updaterServices.Add(new CsNamespaceUpdaterService());
+			updaterServices.Add(new VbNamespaceUpdaterService());
 		}
 
 		public IFileNamespaceUpdater GetUpdater(string filePath)
