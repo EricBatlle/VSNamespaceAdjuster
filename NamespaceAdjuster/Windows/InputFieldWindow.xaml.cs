@@ -33,7 +33,7 @@ namespace NamespaceAdjuster.Windows
 				{
 					namespaceAdjuster.FixNamespace(desiredNamespace, filePath);
 				}
-				catch(Exception e)
+				catch (Exception e)
 				{
 					MessageBox.Show(e.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 				}

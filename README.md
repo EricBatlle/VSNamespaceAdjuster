@@ -26,6 +26,7 @@ But if you just want to donate straightforward, I also have [PayPal.me](https://
 ## Supported file extensions
 
 - .cs
+- .vb
 
 ## Contribute and add support for more file extensions
 

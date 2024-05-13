@@ -10,7 +10,7 @@ namespace NamespaceUpdater
 
 		protected override string NamespaceEndLimiter => "End Namespace";
 
-        protected override Match FindNamespaceMatch(string fileContent) =>
+		protected override Match FindNamespaceMatch(string fileContent) =>
 			Regex.Match(fileContent, @"[\r\n|\r|\n]?Namespace\s(.+)");
 
 		protected override MatchCollection FindUsingMatches(string fileContent) =>

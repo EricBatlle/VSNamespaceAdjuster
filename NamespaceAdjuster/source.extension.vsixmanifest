@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="NamespaceAdjuster.897e9043-7d4c-48ac-a147-97f2dcb2be9f" Version="1.2" Language="en-US" Publisher="Eric Batlle Clavero" />
+        <Identity Id="NamespaceAdjuster.897e9043-7d4c-48ac-a147-97f2dcb2be9f" Version="1.3.0" Language="en-US" Publisher="Eric Batlle Clavero" />
         <DisplayName>Namespace Adjuster</DisplayName>
-        <Description xml:space="preserve">Select one or multiple .cs files and adjust them with the specified Namespace</Description>
+        <Description xml:space="preserve">Select one or multiple files and adjust them with the specified Namespace.
+
+Supported file extensions:
+- .cs
+- .vb</Description>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
     </Metadata>
